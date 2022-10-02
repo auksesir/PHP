@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Birkbeck College : [+title+]</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+<body>	
+	<form action="index.php?view=userAdmin#popUp" method='POST'>
+		<input type='hidden' value='[+value+]' name='idValue'>
+		<button id="deleteButton" type="submit"><img alt="bin image" src='images/deleteUser.png'></button> 
+	</form>
+	<form action="index.php?view=userAdmin" method="post" class="popUpBox" id="popUp" novalidate>	
+		<div class="box">
+			<label for="un">Are you sure you want to delete this user?</label>	
+			<input type="submit" name="delete" value="Delete" id="un"/>
+			<input type="submit" name="cancel" value="Cancel" />
+		</div>
+	</form>
+</body>
+

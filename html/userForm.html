@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Birkbeck College : [+title+]</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+<body>	
+	<form method="post" novalidate> 
+		<fieldset>
+			<div>
+				<label for="userFname">First Name</label>
+				<input title="Alphabetic characters only" value="[+fName+]" type="text" name="fName" id="userFname" maxlength="30"/>
+				<span style="color:red"> [+fNameError+]</span>
+			</div>
+			<div>
+				<label for="userSname">Surname</label>
+				<input title="'-', space or alphabetic characters only" value="[+sName+]" type="text" name="sName" id="userSname" maxlength="45"/>
+				<span style="color:red"> [+sNameError+]</span>
+			</div>
+			<div>
+				<label for="userEmail">Email</label>
+				<input title="RFC 822 standard" value="[+email+]" type="text" name="email" id="userEmail" maxlength="45"/>
+				<span style="color:red"> [+emailError+]</span>
+			</div>
+			<div>
+				<label for="userTelephone">Telephone</label>
+				<input title="alphanumeric" value="[+telephone+]" type="text" name="telephone" id="userTelephone" maxlength="30"/>
+				<span style="color:red"> [+telephoneError+]</span>
+			</div>
+			<div>
+				<label for="userName">User Name</label>
+				<input title="no less than 8 characters, alphanumeric and UNIQUE" value="[+uName+]" type="text" name="uName" id="userName" maxlength="30"/>
+				<span style="color:red"> [+uNameError+]</span>
+			</div>
+			<div>
+				<label for="passw">Password</label>
+				<input title="No less than 8 characters and must include, uppercase, lowercase, a number plus one of these special characters:! - < > £ $ % & * ~ #" 
+					value="[+passw+]" type="password" name="passw" 
+					id="passw" maxlength="15"/>	
+				<span style="color:red"> [+passwError+]</span>
+			</div>
+			<div >
+				<label for="userType">User Type</label>
+				<select name="uType" id="userType">
+					<option [+adminSelected+] value="admin">Admin</option>
+					<option [+academicSelected+] value="academic">Academic</option>
+				</select>
+				<span style="color:red"> [+typeError+]</span>
+			</div>
+			<input type="submit" name="Submitted" value="Submit Data" />
+		</fieldset>
+	</form>
+</body>
