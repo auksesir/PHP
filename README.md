@@ -33,6 +33,13 @@ To create a log-in I used a log in form with placeholders which are validated ev
 ![7](https://user-images.githubusercontent.com/85522584/212575256-fe069691-ca66-47e0-96b9-647f0b8216dd.jpg)
 
 
+Module results
+
+![1](https://user-images.githubusercontent.com/85522584/212575154-1acc9a05-9a1d-4494-aad7-f70335fa9143.jpg)
+
+There is a function that uploads new data from the files to the database, if it is not uploaded yet. The tables are displayed horizontally on the page. To create a flex layout, class attribute is given to the container of the tables.
+
+
 User Admin view (academic type user does not have access to)
 
 To create icon links on the user administration view, I passed additional values to the URL. To open ‘View user’ table, ‘New user’ and ‘Edit user’ forms, I have passed ‘viewUser’, ‘newUser’, ‘editUser’ as property values to an ‘action’ variable. To know which user was selected to view or edit I have used an ‘id’ variable to pass id values of the user selected in the URL. As an ‘action’ parameter as well as ‘view’ parameter are passed via URL it is first checked if it exists in the ‘views’ folder of the project to avoid errors being thrown. This is done in ‘index.php’ on line 82 and in ‘userAdmin.php’ on line 12. I have also created a ‘Go back’ button that takes the user back to the initial ‘User Administration’ view, if the user is viewing, editing, or creating a new user. The button link contains a placeholder, to make sure that it takes the user back to the ‘Home Page’, in cases when a logged in ‘admin’ user is changed to an ‘academic’ type user. Also, in such cases, if the user tried selecting a ‘User Administration’ navigation option after becoming a type ‘academic’ user, the ‘Home Page’ is displayed instead, and the ‘User Administration’ navigation option disappears.
@@ -68,11 +75,7 @@ Delete User
 
 To delete a user, I have added ‘#popUp’ to the URL. So that after selecting one of the delete icons a pop up appears asking if the user should be deleted. The delete icon is a submit button which returns the id value of a selected user. When a user confirms the deletion, the selected user is deleted from the database. I have made sure that the initial admin user and the logged in users cannot be deleted. Every time after one of the users is deleted, on the ‘User Administration’ view displayed table is automatically updated.
 
-Module results
 
-![1](https://user-images.githubusercontent.com/85522584/212575154-1acc9a05-9a1d-4494-aad7-f70335fa9143.jpg)
-
-There is a function that uploads new data from the files to the database, if it is not uploaded yet. The tables are displayed horizontally on the page. To create a flex layout, class attribute is given to the containing the tables.
 
 Testing
 
